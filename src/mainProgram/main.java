@@ -1,5 +1,6 @@
 package mainProgram;
 
+import DivideAndConquer.BinarySearch;
 import LinkedList.DoubleLinkedList;
 import LinkedList.linkedList;
 import Queue.queue;
@@ -15,12 +16,14 @@ public class main {
      static queue qu = new queue();
      static queueWithArray qa = new queueWithArray();
      static DoubleLinkedList doubleLinkedList = new DoubleLinkedList();
+     static BinarySearch binarySearch = new BinarySearch();
 
     public static void main(String[] args) {
 
-    linkedListfunc();
-    Stackfunc();
-    Qfunc();
+//    linkedListfunc();
+//    Stackfunc();
+//    Qfunc();
+    DivideAndConquer();
 
 
     }
@@ -78,6 +81,12 @@ public class main {
 
         doubleLinkedList.push(5);
 
+    }
+
+    public static void DivideAndConquer(){
+        int[] arr = new int[]{ 0,1,2,3,4,5,6,7,8,9,10};
+
+        System.out.println("value in binarySearch  " + binarySearch.BinarySearch(arr , 6));
     }
     
 }

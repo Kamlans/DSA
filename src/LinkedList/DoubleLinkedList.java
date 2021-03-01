@@ -25,7 +25,12 @@ public class DoubleLinkedList {
     public void append(int data) {
         Node newNode = new Node(data);
 
-        if(head != null){
+        if ( head == null) {
+            head = newNode;
+            return;
+        }
+
+        else if(head != null){
             while (newNode.next != null){
                 
             }
